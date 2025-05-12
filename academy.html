@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<title>العربية المعاصرة - عالمية | الأكاديمية العربية</title>
+
+<!-- Tailwind CSS v4 via Browser CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Import Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Custom animations */
+.fade-in {
+  animation: fadeInUp .8s ease forwards;
+}
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to   {opacity:1; transform: translateY(0);}
+}
+
+.section-bg-pattern {
+  background-image: url('https://picsum.photos/seed/pattern/500/300');
+  background-repeat: repeat;
+}
+</style>
+
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- Navbar -->
+<nav class="flex items-center justify-between px-6 py-4 shadow bg-white sticky top-0 z-10">
+  <a href="#" class="text-xl font-bold tracking-wide">العربية المعاصرة</a>
+  <div class="space-x-8 hidden md:flex">
+    <a href="#home" class="hover:text-blue-500 transition">الرئيسية</a>
+    <a href="#courses" class="hover:text-blue-500 transition">الدورات</a>
+    <a href="#testimonials" class="hover:text-blue-500 transition">شهادات</a>
+    <a href="#contact" class="hover:text-blue-500 transition">تواصل معنا</a>
+  </div>
+  <button class="md:hidden">
+    <i class="fas fa-bars text-xl"></i>
+  </button>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="relative flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-white fade-in px-6 py-12 overflow-hidden">
+  <div class="absolute inset-0 section-bg-pattern opacity-30"></div>
+  
+  <div class="max-w-4xl text-center space-y-6 z-10 relative p-8 rounded-lg shadow-xl bg-white/70 backdrop-blur-md animate-fadeInUp">
+    <h1 class="text-4xl md:text-5xl font-bold">أكاديمية العربية المعاصرة</h1>
+    <p class="text-lg text-gray-600">تعلم اللغة العربية الحديثة في نظام تعليمي مبتكر، من خلال دوراتنا التفاعلية والدقيقة.</p>
+    <a href="#courses" class="inline-block bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-white font-semibold shadow-lg">استكشف الدورات</a>
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="py-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 fade-in">
+    <!-- Alimah Course Card -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-3 transition transform duration-500 p-8 flex flex-col justify-between space-y-4 border-t-4 border-blue-500">
+      <h2 class="text-2xl font-bold">العلماء معلمين (الإلماه)</h2>
+      <p>برنامج ٣ سنوات من الدروس المختخصة، يغطي كل مجالات اللغة العربية الحديثة.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>دورات اللغة الفصحى</li>
+        <li>الثقافة العربية الحديثة</li>
+        <li>التقنيات الرقمية في التعليم</li>
+        <li>الممارسات العملية والتوجيه العملي</li>
+      </ul>
+      <a href="#contact" class="inline-block mt-auto bg-blue-500 hover:bg-blue-600 transition px-4 py-2 rounded-full text-white font-semibold shadow-lg">انضم الآن</a>
+    </div>
+
+    <!-- Mominath Course Card -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-3 transition transform duration-500 p-8 flex flex-col justify-between space-y-4 border-t-4 border-green-500">
+      <h2 class="text-2xl font-bold">المؤمنة معلمة (المominath)</h2>
+      <p>برنامج خاص للاستثمار المهني في اللغة العربية للطلاب المتسابقين، لمدة شهر أو ثلاثة أشهر.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>مهارات التدريس الفعال</li>
+        <li>التوجيه والتقييم العملي</li>
+        <li>الاستخدام المتقدم للتطبيقات الرقمية في التعليم</li>
+      </ul>
+      <a href="#contact" class="inline-block mt-auto bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-full text-white font-semibold shadow-lg">انضم الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-16">
+  <div class="max-w-5xl mx-auto px-6 fade-in space-y-8">
+    <h2 class="text-3xl font-bold text-center mb-4">شهادات الطلاب</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 space-y-4 hover:shadow-2xl transition transform duration-300 border-t-4 border-blue-500">
+        <p>&ldquo;أنا منجز واقعًا لأهدافي في اللغة العربية. شكراً للمؤلفين!&rdquo;</p>
+        <div class="text-right font-semibold">محمد، معلم</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 space-y-4 hover:shadow-2xl transition transform duration-300 border-t-4 border-green-500">
+        <p>&ldquo;دوراتكم تؤدي إلى النجاح. شكراً للموظفين!&rdquo;</p>
+        <div class="text-right font-semibold">سارة، معلمة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-br from-white to-blue-50">
+  <div class="max-w-4xl mx-auto px-6 fade-in space-y-8 text-center">
+    <h2 class="text-3xl font-bold">اتصل بنا</h2>
+    <p>هل لديك أي أسئلة؟ لا تتردد في الاتصال بالموقع.</p>
+
+    <!-- Contact Form -->
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+      <input type="text" placeholder="الاسم" required class="rounded-lg border border-gray-300 p-3 focus:border-blue-500 outline-none"/>
+      <input type="email" placeholder="البريد الإلكتروني" required class="rounded-lg border border-gray-300 p-3 focus:border-blue-500 outline-none"/>
+      <textarea rows="4" placeholder="نص الرسالة" required class="md:col-span-2 rounded-lg border border-gray-300 p-3 focus:border-blue-500 outline-none"></textarea>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-white font-semibold shadow-lg">إرسال</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-gray-500">
+    <p>&copy; 2024 اكاديمية العربية المعاصرة. جميع الحقوق محفوظة.</p>
+    <div class="flex space-x-6">
+      <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Optional: Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
+</body>
+</html>
