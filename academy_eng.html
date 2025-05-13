@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<title>Modern Arabic Academy | Global</title>
+
+<!-- Tailwind CSS v4 via Browser CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Import Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Custom animations */
+.fade-in {
+  animation: fadeInUp .8s ease forwards;
+}
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to   {opacity:1; transform: translateY(0);}
+}
+
+.section-bg-pattern {
+  background-image: url('https://picsum.photos/seed/pattern/500/300');
+  background-repeat: repeat;
+}
+</style>
+
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<!-- Navbar -->
+<nav class="flex items-center justify-between px-6 py-4 shadow bg-white sticky top-0 z-10">
+  <a href="#" class="text-xl font-bold tracking-wide">Modern Arabic Academy</a>
+  <div class="space-x-8 hidden md:flex">
+      <a href="#home" class="hover:text-blue-500 transition">Home</a>
+      <a href="#courses" class="hover:text-blue-500 transition">Courses</a>
+      <a href="#testimonials" class="hover:text-blue-500 transition">Testimonials</a>
+      <a href="#contact" class="hover:text-blue-500 transition">Contact Us</a>
+      <button id="translate" class="material-icons" style="font-size:36px;">translate</i>
+  </div>
+  <button class="md:hidden">
+    <i class="fas fa-bars text-xl"></i>
+  </button>
+</nav>
+
+<script>
+document.getElementById('translate').addEventListener('click', function() {
+  // Replace 'en.html' with your desired translation page
+  window.location.href = "https://reach-dust.github.io/academy/acd_urdu.html"; 
+});
+</script>
+
+<!-- Hero -->
+<section id="home" class="relative flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-white fade-in px-6 py-12 overflow-hidden">
+  <div class="absolute inset-0 section-bg-pattern opacity-30"></div>
+  
+  <div class="max-w-4xl text-center space-y-6 z-10 relative p-8 rounded-lg shadow-xl bg-white/70 backdrop-blur-md animate-fadeInUp">
+    <h1 class="text-4xl md:text-5xl font-bold">Modern Arabic Academy</h1>
+    <p class="text-lg text-gray-600">Learn Modern Standard Arabic in a cutting-edge learning system, through interactive and immersive courses.</p>
+    <a href="#courses" class="inline-block bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-white font-semibold shadow-lg">Explore Courses</a>
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="py-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 fade-in">
+    <!-- Alimah Course Card -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-3 transition transform duration-500 p-8 flex flex-col justify-between space-y-4 border-t-4 border-blue-500">
+      <h2 class="text-2xl font-bold">Scientist Teachers (Alimah)</h2>
+      <p>A 3-year curriculum covering all aspects of modern Arabic language.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Modern Standard Arabic Language</li>
+        <li>The Modern Arabic Culture</li>
+        <li>Digital Technologies in Education</li>
+        <li>Practical Teaching Methods and Practices</li>
+      </ul>
+      <a href="#contact" class="inline-block mt-auto bg-blue-500 hover:bg-blue-600 transition px-4 py-2 rounded-full text-white font-semibold shadow-lg">Join Now</a>
+    </div>
+
+    <!-- Mominath Course Card -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-3 transition transform duration-500 p-8 flex flex-col justify-between space-y-4 border-t-4 border-green-500">
+      <h2 class="text-2xl font-bold">Faithful Teachers (Mominath)</h2>
+      <p>A professional development program for aspiring Arabic teachers, 1 or 3 months long.</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Effective Teaching Skills</li>
+        <li>Practical Guidance and Evaluation Methods</li>
+        <li>Advanced Digital Applications in Education</li>
+      </ul>
+      <a href="#contact" class="inline-block mt-auto bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-full text-white font-semibold shadow-lg">Join Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-16">
+  <div class="max-w-5xl mx-auto px-6 fade-in space-y-8">
+    <h2 class="text-3xl font-bold text-center mb-4">Student Reviews</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 space-y-4 hover:shadow-2xl transition transform duration-300 border-t-4 border-blue-500">
+        <p>&ldquo;I achieved my goals in Arabic thanks to your programs. Thank you, team!&rdquo;</p>
+        <div class="text-right font-semibold">Mohammad, Teacher</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 space-y-4 hover:shadow-2xl transition transform duration-300 border-t-4 border-green-500">
+        <p>&ldquo;Your courses lead to success. Thank you, staff!&rdquo;</p>
+        <div class="text-right font-semibold">Sarah, Teacher</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gradient-to-br from-white to-blue-50">
+  <div class="max-w-4xl mx-auto px-6 fade-in space-y-8 text-center">
+    <h2 class="text-3xl font-bold">Contact Us</h2>
+    <p>Have questions? Don't hesitate to reach out.</p>
+
+    <!-- Contact Form -->
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+      <input type="text" placeholder="Name" required class="rounded-lg border border-gray-300 p-3 focus:border-blue-500 outline-none"/>
+      <input type="email" placeholder="Email" required class="rounded-lg border border-gray-300 p-3 focus:border-blue-500 outline-none"/>
+      <textarea rows="4" placeholder="Your message" required class="md:col-span-2 rounded-lg border border-gray-300 p-3 focus:border-blue-500 outline-none"></textarea>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-white font-semibold shadow-lg">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-gray-500">
+    <p>&copy; 2024 Modern Arabic Academy. All rights reserved.</p>
+    <div class="flex space-x-6">
+      <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Optional: Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
+</body>
+</html>
